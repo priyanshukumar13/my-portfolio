@@ -27,9 +27,9 @@ export const socialLinks = {
 
 export const heroContent = {
   greeting: "Hi, I'm Priyanshu Kumar",
-  titleHighlight: "Cloud & AI Enthusiast | Software Developer",
+  titleHighlight: "Cloud Computing | AI | Software Engineer",
   subtitle:
-    "I build smart, serverless applications and responsive user interfaces using React, Python (FastAPI), NodeJS, and AWS.",
+    "I build smart, serverless applications and responsive user interfaces using React, Python (FastAPI), NodeJS, and Cloud Technologies.",
   ctaPrimary: { text: "View My Work", href: "#projects" },
   ctaSecondary: {
     text: "Contact Me",
@@ -40,8 +40,8 @@ export const heroContent = {
 
 export const aboutContent = {
   heading: "Hello!",
-  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Priyanshu Kumar</span>, an aspiring software engineer based in Punjab, India, dedicated to crafting intelligent, clean, and highly scalable full-stack applications. Currently pursuing B.Tech in Computer Science and Engineering at Lovely Professional University.`,
-  techStack: ["ReactJS", "Python", "AWS"],
+  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Priyanshu Kumar</span>, an aspiring <strong>Software Engineer</strong> and <strong>Cloud Enthusiast</strong> based in Punjab, India. I am passionate about Cloud Computing, Artificial Intelligence, and building scalable software solutions that solve real-world problems. Currently pursuing a B.Tech in Computer Science and Engineering at Lovely Professional University.`,
+  techStack: ["AWS", "Python", "AI/ML"],
 };
 
 export const skillsContent = {
@@ -83,7 +83,7 @@ export const technicalSkills = {
         { name: "Python", level: 90 },
         { name: "C++", level: 85 },
         { name: "C", level: 80 },
-        { name: "JavaScript", level: 85 }
+        { name: "JavaScript", level: 65 }
       ]
     },
     {
@@ -99,7 +99,7 @@ export const technicalSkills = {
       title: "Backend & Cloud",
       skills: [
         { name: "FastAPI", level: 80 },
-        { name: "AWS Services", level: 82 },
+        { name: "AWS Services", level: 80 },
         { name: "REST APIs", level: 85 }
       ]
     },
@@ -118,7 +118,7 @@ export const technicalSkills = {
       title: "Computer Science Concepts",
       skills: [
         { name: "OOP", level: 90 },
-        { name: "DSA", level: 85 },
+        { name: "DSA", level: 75 },
         { name: "DBMS", level: 82 },
         { name: "Operating Systems", level: 85 },
         { name: "Computer Networks", level: 88 }
@@ -322,7 +322,7 @@ export const education = {
 export const footerContent = {
   taglines: [
     "Software Engineering & Web Dev",
-    "React · Python · AWS",
+    "React · Python · Cloud",
     "Serverless & Intelligent Apps",
   ],
   credential: "B.Tech CSE · Lovely Professional University",
