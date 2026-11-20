@@ -3,23 +3,30 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { personalInfo } from '../data/portfolioData';
 
 const Preloader = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const q = new URLSearchParams(window.location.search).get('swarm');
+      if (q === 'off' || q === '0') return true;
+      return false;
+    }
+    return false;
+  });
 
   useEffect(() => {
-    // Wait for the water fill animation (1.5s) + a small pause (0.5s)
-    // before the shutter goes up smoothly.
+    if (!isLoading) return;
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 2200);
     
     return () => clearTimeout(timer);
-  }, []);
+  }, [isLoading]);
 
   return (
     <AnimatePresence>
       {isLoading && (
         <motion.div
           key="preloader"
+          data-swarm-skip="true"
           initial={{ y: 0 }}
           exit={{ y: "-100%" }}
           transition={{ duration: 1.2, ease: [0.76, 0, 0.24, 1] }}
